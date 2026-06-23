@@ -21,18 +21,17 @@ body {
 
 /* Fixed navbar */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background: #1e3a8a;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #1e3a8a;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 40px;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 .menu-toggle {
@@ -45,10 +44,11 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    text-decoration: none;
     color: white;
+    font-size: 20px;
     font-weight: 700;
-    font-size: 22px;
 }
 
 .logo img {
@@ -231,14 +231,14 @@ section {
     }
 
     .logo {
-        order: 2;
-        font-size: 16px;
-    }
+    font-size: 14px;
+    gap: 8px;
+}
 
-    .logo img {
-        width: 35px;
-        height: 35px;
-    }
+.logo img {
+    width: 35px;
+    height: 35px;
+}
 
     .nav-links {
         display: none;
@@ -262,9 +262,9 @@ section {
     }
 
     .hero {
-        height: auto;
-        padding: 60px 20px;
-    }
+    height: auto;
+    padding: 20px 20px 60px 20px;
+}
 
     .hero h1 {
         font-size: 30px;
